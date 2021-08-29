@@ -64,6 +64,24 @@
     + SCRIPT(JS 불러오거나 작성하기)
      
       HTML 문서에서는 CSS를 link로 불러오거나 style안에 작성할 수 있다.
-      JS는 `<script><\script>`로 이 2가지 방식을 모두 사용할 수 있다.
+      JS는 `<script></script>`로 이 2가지 방식을 모두 사용할 수 있다.
       
         <img width="369" alt="html" src="https://user-images.githubusercontent.com/63788023/131248659-ba27fb51-5d0a-40fd-9667-b6257b56fa6b.PNG">
+        
+  + HTML 문서의 구조
+   
+     `<body></body>` 안에서 사용하는 태그들은 HTML 문서의 구조를 나타낸다.
+     
+     + DIV(막 쓰는 태그)
+       단순히 특정 범위를 묶는(wrap) 용도로 사용한다. 보통 묶인 부분에 CSS나 JS적용
+       
+         <img width="360" alt="html" src="https://user-images.githubusercontent.com/63788023/131248778-c9930f6a-1b10-4608-ae4d-50d258f07de3.PNG">
+         
+     + IMG(이미지를 넣는 태그)
+       
+       `<img>`는 HTML에 이미지를 삽입할 때 사용한다.
+       
+         <img width="315" alt="html" src="https://user-images.githubusercontent.com/63788023/131248826-774d2751-8c9f-400d-9383-aa4d354c014a.PNG">
+         
+       src : (필수) 이미지의 URL
+       alt : (필수) 이미지의 대체 텍스트를 지정

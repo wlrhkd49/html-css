@@ -31,7 +31,7 @@
 
       <img width="443" alt="html2" src="https://user-images.githubusercontent.com/63788023/131248075-41d51000-8216-4f3f-b36c-a115dd5e283f.PNG">
       
-  +  HTML 문서의 정보
+  + HTML 문서의 정보
   
     + TITLE(웹 페이지의 제목)
     
@@ -44,3 +44,26 @@
       HTML문서에 관한 정보 (표시방식, 제작자, 내용, 키워드 등)를 검색엔진이나 브라우저에 제공한다. (빈 태그)
       
         <img width="354" alt="html2" src="https://user-images.githubusercontent.com/63788023/131248338-0d03370a-b758-4ec4-a5da-be8dd6f294cb.PNG">
+        
+    + LINK(CSS 불러오기)
+      
+      외부 문서를 연결할 때 사용한다. (외부에서 작성된 CSS 문서) 불러와 연결
+      (빈 태그)
+      
+        <img width="377" alt="html" src="https://user-images.githubusercontent.com/63788023/131248457-ff88c829-8902-408c-b570-b962d0b7df99.PNG">
+        
+      rel : (필수)현재 문서와 외부문서와의 관계를 지정
+      href : 외부 문서의 위치를 지정
+      
+    + STYLE(CSS 작성하기)
+      
+      CSS를 HTML 문서 내부에 작성할 때 사용한다.
+      
+        <img width="334" alt="html2" src="https://user-images.githubusercontent.com/63788023/131248541-4a06b83a-a8c6-49a6-8b79-5f74fc70ea99.PNG">
+        
+    + SCRIPT(JS 불러오거나 작성하기)
+     
+      HTML 문서에서는 CSS를 link로 불러오거나 style안에 작성할 수 있다.
+      JS는 `<script><\script>`로 이 2가지 방식을 모두 사용할 수 있다.
+      
+        <img width="369" alt="html" src="https://user-images.githubusercontent.com/63788023/131248659-ba27fb51-5d0a-40fd-9667-b6257b56fa6b.PNG">

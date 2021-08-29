@@ -12,5 +12,10 @@
     
       <img width="402" alt="html" src="https://user-images.githubusercontent.com/63788023/131247437-0261e881-ccf7-4e9c-8c3c-9f56a8eb89ad.PNG">
       
-      img처럼 닫히는 태그가 없으면 빈 태그(Empty Tag)라고 함.
+      img처럼 닫히는 태그가 없으면 빈 태그(Empty Tag)라고 한다.
 
+    + 부모와 자식 요소
+
+      <img width="297" alt="html" src="https://user-images.githubusercontent.com/63788023/131247620-d70979a6-8c99-4c41-a985-4b411c1d6574.PNG">
+    
+      부모 자식 관계를 통해 요소들의 구성도를 파악할 수 있다.

@@ -100,3 +100,46 @@ div {
 ```
 
 링크 태그로 가져온 다음 일괄적으로 적용
+
+## 선택자
+
+HTML의 특정한 요소를 선택하는 사인
+
+### 태그로 찾기
+
+선택자를 입력하는 부분에 적용하려는 태그의 이름을 입력한다.
+
+```css
+/*<h1>은 글자색이 빨강이야!*/
+h1 {
+  color: red;
+}
+/*<p>는 글자색이 파랑이야!*/
+p {
+  color: blue;
+}
+```
+
+### 클래스로 찾기
+
+좀 더 명확하게 원하는 요소를 찾기 위해서 **클래스 선택자**라는 것이 존재한다.
+
+```css
+/*class="title"은 글자색이 빨강이야!*/
+.title {
+  color: red;
+}
+/*class="main-text"는 글자색이 파랑이야!*/
+.main-text {
+  color: blue;
+}
+```
+.title의 의미는 class="title"인 요소를 찾아서 css내용을 적용
+.main-text의 의미는 class="main-text"인 요소를 찾아서 css내용을 적용
+
+```html
+<h1 class="title">제목1</h1> <!--red-->
+<h1>제목2</h1>
+<p class="main-text">본문1</p> <!--blue-->
+<p>본문2</p>
+```

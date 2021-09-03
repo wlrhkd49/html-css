@@ -121,3 +121,93 @@
 ```css
   div { display: block; }
 ```
+
+
+## 문자 콘텐츠 (21/09/03)
+
+### `<ol><ul><li>`
+
+- 각 항목 `<li>`에 정렬된 목록 `<ol>`이나 정렬되지 않는 목록 `<ul>`을 설정 <br>
+(Ordered List, Unordered List)
+
+- `<li>`는 단독으로 사용될 수 없으며 `<ol>`이나 `<ul>`에 자식으로 포함되어야 한다.
+
+- 정렬된 목록 `<ol>`의 학목 순서는 중요도를 의미할 수 있다.
+
+```css
+  ol, ul { display: block; }
+  li { display: list-item }
+```
+
+1. `<ol>`
+reversed: 항목을 역순으로 설정<br>
+start: 항목에 매겨지는 번호의 시작 값<br>
+type: 항목에 매겨지는 번호의 유형
+
+1. `<li>`
+value: 항목의 순서를 설정 (이하 항목들의 순서가 다시 지정됨)
+
+
+### `<dl>, <dt>, <dd>`
+
+용어`<dt>`와 정의`<dd>` 쌍들의 영역`<dl>`을 설정한다.<br>
+(Description List, Definition Details, Definition Term)
+
+- `<dl>`은 `<dd>, <dt>`만을 포함해야 한다.
+
+- 키(key) 값(value) 형태를 표시할 때 유용하다.
+
+```css
+<dl>
+  <dt>Coffee</dt>
+  <dd>Coffee in a brewed drink prepared from roasted coffee beans<dd>
+</dl>
+```
+
+```css
+  dl, dt, dd { display: block; }
+```
+
+
+### `<p>`
+
+하나의 문단을 설정. (Paragraph)
+
+- 일반적으로 정보통신보조기기 등은 다음 문단(`<p>`)으로 넘어갈 수 있는 단축키를 제공한다.
+
+```css
+  p { display: block; }
+```
+
+### `<hr />`
+
+문단의 분리(주제에 의한)를 위해 설정한다. (Horizontal Rule)
+
+- 대부분의 경우 수평선으로 표시되나 의미적 관점으로만 사용해야 한다.
+
+```css
+  hr { display: block; }
+```
+
+### `<pre>`
+
+서식이 미리 지정된 텍스트를 설정.<br>
+(Preformatted Text)
+
+- 텍스트의 공백과 줄바꿈을 유지하여 표시할 수 있다.
+
+- 기본적으로 Monospace 글꼴 계열로 표시된다.
+
+```css
+  pre { display: block; }
+```
+
+### `<blockquote>`
+
+일반적인 인용문을 설정한다.
+
+- cite : value -> 인용한 곳을 표시
+
+```css
+  blockquote { display: block; }
+```

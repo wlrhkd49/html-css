@@ -7,17 +7,26 @@
 </head>
 <body>
     <!--크기 줄이는 용도는 하나만 지정-->
-    <img
-         srcset="images/heropy_small.png 400w,
-          images/heropy_medium.png 700w,
-          images/heropy_large.png 1000w"
-        sizes="(min-width: 1000px) 700px"
-        src="images/heropy.png"
-        alt="HEROPY" />
+    <figure>
+        <img srcset="images/heropy_small.png 400w,
+              images/heropy_medium.png 700w,
+              images/heropy_large.png 1000w"
+              sizes="(min-width: 1000px) 700px"
+              src="images/heropy.png"
+              alt="HEROPY" />
+        <figcaption>HEROPY 이미지입니다!</figcaption>
+    </figure>
+        
 
     <audio src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" 
     controls 
     muted
     ></audio>
+
+    <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+    controls
+    loop
+    muted
+    poster="./images/heropy_medium.png"></video>
 </body>
 </html>

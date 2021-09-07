@@ -82,3 +82,103 @@ loop | 재생이 끝나면 다시 처음부터 재생 | boolean |
 preload | 페이지가 로드될 때 파일을 로드할지의 지정 | none: 로드하지 않음<br> metadata: 메타데이터만 로드.<br> auto: 전체 파일 로드 | metadate
 src | 콘텐츠 URL | URL |
 muted | 음소거 여부 | boolean |
+
+
+### `<video>`
+
+동영상 콘텐츠(MP4)를 삽입.
+
+- autoplay가 지정된 경우, preload는 무시됨.
+
+속성 | 의미 | 값 | 기본값
+--- | --- | --- | ---
+autoplay | 준비되면 바로 재생 | boolean |
+controls | 제어 메뉴를 표시 | boolean |
+crossorigin | 가져오기가 `CORS`를 사용하여 수행되어야 하는지 여부 | anonymous, use-credentials |
+loop | 재생이 끝나면 다시 처음부터 재생 | boolean |
+muted | 음소거 여부 | boolean |
+poster | 동영상 썸네일 이미지 URL | URL |
+preload | 페이지가 로드될 때 파일을 로드할지의 지정(힌트 제공) | none: 로드하지 않음<br> metadata: 메타데이터만 로드.<br> auto: 전체 파일 로드 | metadata
+src | 콘텐츠 URL | URL |
+width | 동영상 가로 너비 | |
+height | 동영상 세로 너비 | |
+
+```css
+video { display: inline; }
+```
+
+
+### `<figure>, <figcaption>`
+
+`<figure>`는 이미지나 삽화, 도표 등의 영역을 설정.<br>
+`<figcaption>`는 `<figure>`에 포함되어 이미지나 삽화 등의 설명을 표시.
+
+```html
+<figure>
+  <img src="milk.jpg" alt="A milk">
+  <figcaption>Milk is a nutrient-rich, white liquid food produced by the mammary glands of mammals.</figcaption>
+</figure>
+```
+
+```css
+figure { display: block; }
+figcaption { display: inline; }
+```
+
+
+### `<iframe>`
+
+다른 HTML 페이지를 현재 페이지에 삽입. <br>
+(중첩된 브라우저 컨텍스트(프레임)를 표시)
+
+속성 | 의미 | 값 | 기본값
+--- | --- | --- | ---
+name | 프레임의 이름 | |
+src | 포함할 문서의 URL | URL |
+width | 프레임의 가로 너비 | |
+height | 프레임의 세로 너비 | |
+allowfullscreen | 전체 화면 모드 사용 여부 | boolean |
+frameborder | 프레임 테두리 사용 여부 | 0, 1 | 1
+sandbox | 보안을 위한 읽기 전용으로 삽입 | boolean or<br> allow-form: 양식 제출 가능,<br> allow-scripts: 스크립트 실행 가능,<br> allow-same-origin: 같은 출저의 리소스 사용 가능 | |
+
+
+
+### `<canvas>`
+
+`Canvas API`이나 `WebGL API`를 사용하여 그래픽이나 애니메이션을 렌더링.
+
+속성 | 의미
+--- | ---
+width | 캔버스의 가로 너비
+heigth | 캔버스의 세로 너비
+
+```css
+canvas { display: inline; }
+```
+
+
+### `<script>`
+
+스크립트 코드를 문서에 포함 or 참조(외부 스크립트)
+
+속성 | 의미 | 값 | 기본값 | 특징
+--- | --- | --- | --- | --- |
+async | 스크립트의 비동기적 실행 여부 | boolean | | src 속성 필수
+crossorigin | 별도의 도메인을 사용하는 사이트의 오류 로깅을 허용하기 위해 사용 | anonymous, user-credentials | |
+defer | 문서 파싱(구문 분석) 후 작동 여부 | boolean | | src 속성 필수
+src | 참조할 외부 스크립트 URL | URL | | 포함된 스크립트 내부 코드는 무시됨
+type | MIME 타입 | | `text/javascript` |
+
+
+동기적 실행은 위에서 아래로 순서대로 실행<br>
+비동기적 실행은 필요에 의해서 순서를 건너뛰고 실행
+
+
+### `<noscript>`
+
+스크립트를 지원하지 않는 경우에 삽입할 HTML을 정의.
+
+```html
+
+```
+

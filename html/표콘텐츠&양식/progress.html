@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 구분 예제</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- <progress value="100" max="100"></progress>
+    <br>
+    <progress value="0.7"></progress>
+    <br>
+    <progress value="0.3"></progress>
+    <br>
+    <br> -->
+
+    <progress value="0" max="100"></progress>
+    <script>
+        const progress = document.querySelector('progress');
+        const interval = setInterval(function() {
+            progress.value += 10;
+            if (progress.value >= 100) clearInterval(interval);
+        }, 1000)
+    </script>
+</body>
+</html>

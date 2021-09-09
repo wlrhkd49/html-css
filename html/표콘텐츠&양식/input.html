@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 구분 예제</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form action="/login" method="GET">
+        <input type="email" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="로그인">
+    </form>
+    <br>
+
+    <input type="number" step="4">
+    <br>
+    <input type="checkbox" checked>
+    <br>
+    <input type="file" multiple>
+    <br>
+    <form action="/hello">
+        <!-- 삽입된 이미지를 제출 버튼으로 가능 -->
+        <input type="image" src="images/heropy_small.png" alt="HEROPY">
+    </form>
+    <br>
+
+    <!-- 하나만 선택할 경우 name 같게함 -->
+    <input type="radio" name="radio">
+    <input type="radio" name="radio" checked>
+    <input type="radio" name="radio">
+    <br>
+
+    <form action="/reset">
+        <input type="text" name = "id">
+        <input type="password" name="pw">
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+    </form>
+    <!-- 이 input은 reset의 폼태그 안에 양식이 아니므로 초기화 안됨 -->
+    <input type="text">
+    <br>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 구분 예제</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <select name="fruits">
+        <optgroup label="내가 좋아하는 과일">
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Banana</option>
+        </optgroup>
+        <optgroup label="내가 싫어하는 과일">
+            <option selected>Mango</option>
+            <option>Fineapple</option>
+        </optgroup>
+    </select>
+    <br><br>
+
+
+    <input type="text" list="fruits">
+    <datalist id="fruits">
+        <option>Apple</option>
+        <option>Orange</option>
+        <option>Banana</option>
+        <option>Mango</option>
+        <option>Fineapple</option>
+    </datalist>
+</body>
+</html>

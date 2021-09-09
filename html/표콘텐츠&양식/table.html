@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 구분 예제</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- 표 영역 -->
+    <table>
+        <tr>
+            <th colspan="2" id="th-data">데이터</th>
+        </tr>
+        <!-- tr을 이용하여 줄을 먼저 만든다 -->
+        <tr>
+            <!-- header -->
+            <!-- headers는 타입이 th-data라는 칸에 종속되어있다 의미 -->
+            <th abbr="Type" scope="col" headers="th-data">타입</th>
+            <th abbr="Value" scope="col" headers="th-data">값</th>
+        </tr>
+        <tr>
+            <!-- data -->
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <!-- data -->
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+</html>

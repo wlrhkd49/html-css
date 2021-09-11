@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        /* class 찾기 */
+        .section {
+            width : 100px;
+            color: red;
+            background: blue;
+        }
+        /* id 찾기 */
+        #section {
+            height: 200;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div id="section"></div>
+    <!-- <div id="section"></div> 불가능! (id는 하나만) -->
+
+    <script>
+        // 클래스 section인 요소 검색
+        const section = document.querySelector('.section');
+        // id section인 요소 검색
+        const sectionId = document.getElementById('section')
+    </script>
+</body>
+</html>

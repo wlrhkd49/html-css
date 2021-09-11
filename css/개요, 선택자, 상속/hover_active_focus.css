@@ -1,0 +1,34 @@
+a:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    transition: 0.4s;
+}
+.box:hover {
+    width: 200px;
+}
+.boxi {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    transition: 0.4s;
+}
+.boxi:active {
+    width: 200px;
+    background: yellowgreen;
+}
+input {
+    width: 100px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+input:focus {
+    border-color: red;
+    width: 200px;
+}

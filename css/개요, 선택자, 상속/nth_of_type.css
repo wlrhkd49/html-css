@@ -1,0 +1,14 @@
+.fruits {
+    font-size: 40px;
+}
+.fruits p:nth-of-type(1) {
+    color: red;
+}
+
+.fruits1 {
+    font-size: 40px;
+}
+/* nth-of-type(1)에는 red라는 클래스가 없으므로 안됨 */
+.fruits1 .red:nth-of-type(1){
+    color: red;
+}

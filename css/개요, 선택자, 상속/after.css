@@ -1,0 +1,6 @@
+ul {
+    font-size: 400px;
+}
+ul li:after {
+    content: url("https://heropy.blog/css/images/logo.png");
+}

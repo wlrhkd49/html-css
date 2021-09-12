@@ -1,0 +1,21 @@
+[disabled] {
+    opacity: 0.2;
+    color: red;
+}
+/* type과 value */
+[type="password"] {
+    opacity: 0.5;
+    color: red;
+}
+/* 시작 */
+[class^="btn-"] {
+    font-weight: bold;
+    border-radius: 20px;
+}
+/* 끝나는거 */
+[class$="success"] {
+    color: red;
+}
+[class$="danger"] {
+    color: yellowgreen;
+}

@@ -407,3 +407,154 @@ S 가 아닌 E 선택
     color: red;
 }
 ```
+
+
+## 가상 요소 선택자(Pseudo-Elements Selectors) (:: 콜론이 두개 붙음)
+
+
+1. BEFORE
+
+E 요소 **내부의 앞**에, 내용을 삽입<br>
+content 속성 필수!! 
+
+`E::before`
+
+
+2. AFTER
+
+E 요소 **내부의 뒤**에, 내용을 삽입<br>
+content 속성 필수!! 
+
+`E::after`
+
+
+## 속성 선택자(Attribute Selectors)
+
+1. ATTR
+
+속성 attr을 포함한 요소 선택
+
+`[attr]`
+
+
+2. ATTR=VALUE
+
+속성 attr을 포함하며 속성 값이 value 인 요소 선택
+
+`[attr=value]`
+
+
+3. ATTR^=VALUE
+
+속성 attr을 포함하며 속성 값이 value로 시작하는 요소 선택
+
+`[attr^=value]`
+
+
+4. ATTR$=VALUE
+
+속성 attr을 포함하며 속성 값이 value로 끝나는 요소 선택
+
+`[attr$=value]`
+
+
+## 상속(Inheritance)
+
+상속되는 속성들
+
+- font
+    - font-size
+    - font-weight
+    - font-style
+    - line-height
+    - font-family
+- color
+- text-align
+- text-indent
+- text-decoration
+- letter-spacing
+- opacity
+
+강제 상속
+
+```html
+<div class="parent">
+    <div class="child"></div>
+</div>
+```
+
+```css
+.parent {
+    position: absolute; /* 상속되지 않는 속성과 값 */
+}
+.child {
+    position: inherit; /* 강제 상속 받아 position: absolute; 와 동일 */
+}
+```
+
+상속되지 않는 속성도 inherit라는 값을 사용하여 부모에서 자식으로 강제 상속 시킬 수 있지만 자식을 제외한 후손에게는 적용되지 않으며 모든 속성이 강제 상속을 사용할 수 있는 것은 아니다.
+
+
+## 우선순위
+
+```html
+<body>
+    <div id="color_yellow" class="color_green" style="color: orange;">Hello world</div>
+</body>
+```
+
+```css
+div {
+    color: red !important/* !important */
+}
+#color_yellow {
+    color: yellow; /* 아이디 선택자 */
+}
+.color_green {
+    color: green; /* 클래스 선택자 */
+}
+div {
+    color: blue; /* 태그 선택자 */
+}
+* {
+    color: darkblue; /* 전체 선택자 */
+}
+body {
+    color: violet; /* 상속 */
+}
+```
+
+**우선순위 결정**
+
+같은 요소가 여러 선언의 대상이 될 경우, 어떤 선언의 CSS 속성을 우선 적용할지 결정하는 방법<br>
+1.명시도 점수가 높은 선언이 우선 (명시도)<br>
+2.점수가 같은 경우, 가장 마지막에 해석되는 선언이 우선 (선언 순서)<br>
+3.명시도는 '상속'규칙보다 우선 (중요도)<br>
+4.`!important`가 적용된 선언 방식이 다른 모든 방식보다 우선 (중요도)<br>
+
+1. !important 무한pt
+2. 인라인 선언 방식 1000pt
+3. 아이디 선택자 100pt
+4. 클래스 선택자 10pt
+5. 태그 선택자 1pt 
+6. 전체 선택자 0pt
+7. 상속 (항상 우선하지 않음)
+
+```css
+.list li.item { color: red; } /*21pt*/
+
+.list li:hover { color: red; } /*21pt*/
+
+.box::before { content: "Good"; color: red; } /*11pt*/
+
+#submit span { color: red; } /*101pt*/
+
+header .menu li:nth-child(2) { color: red; } /*22pt*/
+
+h1 { color: red; } /*1pt*/
+
+:not .box { color: red; } /*10pt*/
+/*not은 점수 계산 x*/
+
+:not span { color: red; } /*1pt*/
+```

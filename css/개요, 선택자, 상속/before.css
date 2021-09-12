@@ -1,0 +1,23 @@
+ul {
+    font-size: 40px;
+}
+/* li 내부의 앞 */
+ul li::before {
+    /* 무조건 컨텐츠 속성 필수!! */
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: tomato;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+div {
+    font-size: 100px;
+}
+div::before {
+    content: "<";
+}
+div::after {
+    content: ">";
+}

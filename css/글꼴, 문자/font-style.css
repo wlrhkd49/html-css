@@ -1,0 +1,11 @@
+body {
+    font-size: 14px;
+    /* 기본값 16이 기본값 14로 변하게 된다 */
+}
+p {
+    font-size: 40px;
+    font-style: italic;
+}
+div {
+    font-size: 20px;
+}

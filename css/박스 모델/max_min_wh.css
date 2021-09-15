@@ -1,0 +1,13 @@
+.parent {
+    width: 100px;
+    height: 300px;
+    border: 4px solid tomato;
+    margin: 20px;
+}
+.child {
+    /* width: 100%; 기본값 */
+    max-width: 400px;
+    min-width: 200px;
+    height: 200px;
+    background: orange;
+}

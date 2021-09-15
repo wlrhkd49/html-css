@@ -1,0 +1,11 @@
+/* block의 경우는 width: auto는 100%, height: 0px
+inline의 경우는 가로 세로를 가질 수 없음. text에 특화*/
+div {
+    width:auto; /* 100% */
+    height: auto; /* 0 */
+}
+span {
+    width:auto; /* 0 */
+    height: auto; /* 0 */
+    background: tomato;
+}

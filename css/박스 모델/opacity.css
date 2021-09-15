@@ -1,0 +1,17 @@
+.parent {
+    width: 300px;
+    height: 250px;
+    background: cyan;
+}
+.parent .child {
+    width: 150px;
+    height: 100px;
+    background: tomato;
+    font-size: 50px;
+    opacity: 1;
+    /* display: none; 존재하지 않는 개념  */
+}
+.parent .child:nth-child(1) {
+    opacity: 0;
+    /* display: none; */
+}

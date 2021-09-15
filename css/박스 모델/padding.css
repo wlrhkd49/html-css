@@ -1,0 +1,6 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    padding: 20px; /* 요소의 크기가 커짐 */
+}

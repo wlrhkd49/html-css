@@ -1,0 +1,24 @@
+span {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    display: block;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    display: inline;
+}
+input {
+    display: inline-block;
+    /* 인라인이 가지지못하는 w,h,m,p속성을 가질 수 있다 */
+    width: 100px;
+    height: 20px;
+    margin: 50px 0;
+    padding: 20px 0;;
+    /* display: none; */
+}
+input:nth-child(2) {
+    display: none;
+}

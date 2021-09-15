@@ -1,0 +1,40 @@
+html {
+    font-size: 10px;
+}
+body {
+    /* 폰트사이즈를 원래 사이즈로 교체함 rem사용 한것에는 영향 x */
+    font-size: 16px;
+}
+body * {
+    border: 2px solid;
+}
+.container {
+    /* em 은 자기 자신의 폰트사이즈에 영향을 받는다 */
+    /* 10px * 60 */
+    width: 60em;
+    font-size: 15px;
+}
+.parent {
+    /* 부모요소 size에 영향을 받음 */
+    /* 10px * 30 */
+    width: 30em;
+    font-size: 2em;
+}
+.child {
+    /* rem은 최상위 부모요소에서 가져옴 */
+    width: 20rem;
+    font-size: 2em;
+}
+.viewport {
+    /* vw는 뷰포트의 너비, vh는 뷰포트의 높이 100이 최대값*/
+    width: 50vw;
+    height: 50vh;
+    background: red;
+}
+.viewport2 {
+    /* 가로, 세로 중 더 긴쪽을 선택해서 백분율 계산 vmax
+    가로, 세로 중 더 짧은족을 선택해서 백분율 계산 vmin*/
+    width: 50vmin;
+    height: 300px;
+    background-color: yellow;
+}

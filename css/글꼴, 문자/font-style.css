@@ -8,4 +8,30 @@ p {
 }
 div {
     font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    word-spacing: 30px;
+}
+.serif {
+    font-family: serif;
+    text-decoration: overline;
+}
+.sans-serif {
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.monospace {
+    font-family: monospace;
+    text-decoration: none;
+}
+.cursive {
+    font-family: cursive;
+    text-decoration: line-through;
+}
+.heropy {
+    background: url("https://heropy.blog/css/images/logo.png");
+    width: 500px;
+    height: 500px;
+    /* 글자를 특정 영역 밖으로 밀어냄 */
+    text-indent: -9999px;
 }

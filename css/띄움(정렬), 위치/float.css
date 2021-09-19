@@ -1,0 +1,50 @@
+article {
+
+}
+article .picture {
+    width: 200px;
+    height: 150px;
+    background: tomato;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+article .text {
+    /* 흐르는 과정을 멈추고 새로운 단락, 줄로 씀 */
+    clear: left;
+}
+.box {
+    width: 150px;
+    height: 100px;
+    background: tomato;
+    color: white;
+    font-size: 30px;
+    margin:10px;
+    /* 좌측부터 쌓기 */
+    float: right;
+}
+/* 해제 */
+.box4 {
+    width: 200px;
+    height: 150px;
+    background: orange;
+    /* left, right 둘다 해제 */
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.float-box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 10px;
+    float: left;
+}
+.new-box {
+    width: 250px;
+    height: 250px;
+    background: red;
+}

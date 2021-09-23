@@ -1,0 +1,41 @@
+.transform3d {
+    width: 300px;
+    border: 1px solid lightgray;
+    transition: 1s;
+    transform: perspective(500px) 
+    rotateY(45deg);
+}
+.transform-origin {
+    width: 200px;
+    border: 1px solid lightgray;
+    transition: 1s;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.perspective {
+    width: 200px;
+    perspective: 500px;
+    /* 보는 기준점 설정 */
+    perspective-origin: 100% 100%;
+}
+.grand-parent {
+    width: 200px;
+    border: 3px solid dodgerblue;
+    transition: 1s;
+    transform: rotateX(-45deg);
+    transform-style: preserve-3d;
+}
+.parent {
+    width: 200px;
+    border: 3px solid tomato;
+    transition: 1s;
+    transform: rotateY(45deg);
+    transform-style: preserve-3d;
+}
+.per {
+    width: 200px;
+    border: 3px solid lightgray;
+    transition: 1s;
+    transform: rotateX(45deg);
+}

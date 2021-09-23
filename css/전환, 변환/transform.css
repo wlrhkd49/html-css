@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: tomato;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 1s;
+    /* 배치 하고 끝낼 때 사용.
+    애니메이션에 특화되지 않음.
+    position: relative;
+    left: 100px;
+    top: 30px; */
+}
+.box:hover {
+    /* transform: translate(30px, 30px); */
+    /* transform: scale(1.5); */
+    transform: translate(20px, 10px) skew(10deg, 5deg);
+}

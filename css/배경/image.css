@@ -1,0 +1,24 @@
+.box {
+    background-image:
+    url("https://heropy.blog/css/images/vendor_icons/css3.png");
+    /* url("https://heropy.blog/css/images/vendor_icons/html5.png"),
+    url("https://heropy.blog/css/images/vendor_icons/javascript.png") */
+    /* 요소의 크기가 필수적! */
+    /* 요소 범위 내에서 반복적으로 출력되므로 no-repeat 필요 */
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 500px;
+    border: 2px dashed lightgray;
+}
+.box1 {
+    width: 550px;
+    height: 350px;
+    border: 2px dashed lightgray;
+    background-image: url("https://heropy.blog/css/images/logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* background-position: 100px 50px; */
+    /* background-position: 100% 0%; */
+    /* background-position: 50px bottom; left right는 먼저, bottom top은 나중에*/
+}

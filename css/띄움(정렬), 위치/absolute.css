@@ -1,0 +1,36 @@
+body {
+    height: 4000px;
+}
+.grand-parent {
+    width: 400px;
+    height: 300px;
+    padding: 30px 100px 100px 30px;
+    border: 4px dashed lightgray;
+}
+.parent {
+    width: 400px;
+    height: 300px;
+    border: 4px dashed lightgray;
+    position: relative;
+}
+.child {
+    width: 120px;
+    height: 80px;
+    background: tomato;
+    border: 4px dashed red;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.absolute {
+    /* 부모의 position: xxx 가 필요함! */
+    position: absolute;
+    /* position: fixed; 브라우저 기준 (홈쇼핑 목록?) */
+    bottom: 50px;
+    left: 100px;
+}
+.fixed {
+
+}

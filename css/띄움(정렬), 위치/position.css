@@ -1,0 +1,19 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border: 4px dashed red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.relative {
+    /* 자기 위치 기준으로 이동 */
+    /* 원래 위치가 필요, 그 위치에는 남아있음 */
+    /* 즉, 주변에 영향을 준다 */
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}

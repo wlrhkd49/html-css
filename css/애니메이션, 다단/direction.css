@@ -1,0 +1,85 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 10px;
+    margin: 30px;
+    animation: movemove 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* alternate의 경우 count가 1회 더 필요 */
+    animation-direction: alternate-reverse;
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 10px;
+    margin: 30px;
+    animation: move 2s 2s;
+    animation-fill-mode: both;
+}
+.box2 {
+    width: 150px;
+    height: 100px;
+    background: tomato;
+    border-radius: 10px;
+    animation: size-up 3s linear infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2::before {
+    content: "running";
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.box2:hover {
+    animation-play-state: paused;
+    background: dodgerblue;
+}
+.box2:hover::before {
+    content: "paused";
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+@keyframes size-up {
+    0% {
+        width: 150px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(100px, 100px);
+        background: dodgerblue;
+    }
+    100% {
+        transform: translate(300px, 100px);
+        background: yellowgreen;
+    }
+}
+
+@keyframes movemove {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 0);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    75% {
+        transform: translate(0, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

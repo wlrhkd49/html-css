@@ -1,0 +1,9 @@
+.container {
+    display: grid; /* 마치 블록 요소 처럼 된다 */
+    width: 400px;
+    height: 250px;
+    border: 4px solid lightgray;
+}
+.item {
+    border: 2px dashed red;
+}
